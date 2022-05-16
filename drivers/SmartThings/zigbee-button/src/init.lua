@@ -65,6 +65,7 @@ end
 local function added_handler(self, device)
   device:emit_event(capabilities.button.supportedButtonValues({"pushed","held","double"}))
   device:emit_event(capabilities.button.numberOfButtons({value = 1}))
+  device:emit_event(capabilities.button.button({"pushed"}))
 end
 
 local zigbee_button_driver_template = {
