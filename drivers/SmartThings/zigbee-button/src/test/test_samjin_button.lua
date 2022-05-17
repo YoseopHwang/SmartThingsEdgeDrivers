@@ -127,6 +127,13 @@ test.register_coroutine_test(
         attribute_id = "numberOfButtons", state = { value = 1 }
       }
     })
+    test.socket.capability:__expect_send({
+      mock_device.id,
+      {
+        capability_id = "button", component_id = "main",
+        attribute_id = "button", state = { value = "pushed" }
+      }
+    })
     -- test.socket.zigbee:__expect_send({
     --   mock_device.id,
     --   PowerConfiguration.attributes.BatteryPercentageRemaining:read(mock_device)
