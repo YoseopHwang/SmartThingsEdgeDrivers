@@ -1,4 +1,9 @@
 zigbeeManufacturer:
+  - id: "Wireless MINI Switch"
+    deviceLabel: Wireless MINI Switch
+    manufacturer: LUMI
+    model: lumi.remote.b1acn02
+    deviceProfileName: button-profile
   - id: "HEIMAN/SOS-EM"
     deviceLabel: HEIMAN Button
     manufacturer: HEIMAN
